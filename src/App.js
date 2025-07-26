@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link as RouterLink } from 'reac
 import HowItWorks from './pages/HowItWorks';
 import Benefits from './pages/Benefits';
 import Resources from './pages/Resources';
+import MyFiles from './pages/MyFiles';
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
               GeneBank
             </Typography>
             <Link component={RouterLink} to="/" sx={{ mr: 2, fontWeight: 'bold', color: '#1976d2' }}>Home</Link>
+            <Link component={RouterLink} to="/my-files" sx={{ mr: 2, fontWeight: 'bold', color: '#1976d2' }}>My Files</Link>
             <Link component={RouterLink} to="/benefits" sx={{ mr: 2, fontWeight: 'bold', color: '#1976d2' }}>Benefits</Link>
             <Link component={RouterLink} to="/resources" sx={{ fontWeight: 'bold', color: '#1976d2' }}>Genetics Resources</Link>
           </Box>
@@ -176,6 +178,7 @@ function App() {
               </Container>
             </Box>
           } />
+          <Route path="/my-files" element={<MyFiles wallet={wallet} />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/resources" element={<Resources />} />
