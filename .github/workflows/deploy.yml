@@ -1,4 +1,4 @@
-name: Deploy to IPFS
+name: deploy
 
 permissions:
   contents: read
