@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import detectEthereumProvider from '@metamask/detect-provider';
 import Web3 from 'web3';
 import { Container, Typography, Box, Button, LinearProgress, Alert, AppBar, Toolbar, Link, Divider } from '@mui/material';
